@@ -1,13 +1,13 @@
-import about1 from '../assets/images/about/01.png';
-import about2 from '../assets/images/about/02.png';
-import about3 from '../assets/images/about/02.jpg';
-import about4 from '../assets/images/about/04.jpg';
+import about1 from '@assets/images/about/01.png';
+import about2 from '@assets/images/about/02.png';
+import about3 from '@assets/images/about/02.jpg';
+import about4 from '@assets/images/about/04.jpg';
 import { Link } from 'react-router-dom';
 import { MdCloudUpload } from 'react-icons/md';
-import Footer from '../Components/Footer';
-import AboutItem from '../components/AboutItem';
-import Headding from '../components/Headding';
-import Header from '../components/Header';
+import Header from '@components/Header';
+import Headding from '@components/Headding';
+import AboutItem from '@components/AboutItem';
+import Footer from '@components/Footer';
 
 const AboutPage = () => {
   return (
