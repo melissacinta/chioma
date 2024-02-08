@@ -1,3 +1,4 @@
+import about01 from '@assets/images/about/ab01.jpg';
 import about1 from '@assets/images/about/01.png';
 import about2 from '@assets/images/about/02.png';
 import about3 from '@assets/images/about/02.jpg';
@@ -36,8 +37,12 @@ const AboutPage = () => {
         <div></div>
         <Headding text="The Story Of Me" extraClasses={'text-center'} />
         <AboutItem
-          image={about1}
-          text="Hi! I am Chioma Precious Aguluka, A graduate of Nnamdi Azikiwe University(Unizik) Awka Nigeria, from the Department of Accounting."
+          image={about01}
+          text={`Hi! I am Chioma Precious Aguluka, A graduate of Nnamdi Azikiwe University(Unizik) Awka Nigeria, from the Department of Accounting. With over ${
+            new Date().getFullYear() - 2023
+          }+ years of experience as a data analyst, over  ${
+            new Date().getFullYear() - 2018
+          }+ years of experience as an accountant and a lifetime experience as a novelist.`}
           swap
         />
         <AboutItem
@@ -71,11 +76,11 @@ const AboutPage = () => {
         />
         <AboutItem
           image={about4}
-          text="So, accountant, data analyst, novelist - these are not just titles,
+          text={`So, accountant, data analyst, novelist - these are not just titles,
           they're facets of my multifaceted soul. And as I delve deeper into
           each, I discover the profound connections that bind them. For me,
           numbers are not just digits, they are the whispers of stories waiting
-          to be told."
+          to be told.`}
           swap
         />
       </section>

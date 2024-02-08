@@ -18,7 +18,7 @@ const Homepage = () => {
               Precious Aguluka
             </span>
           </h1>
-          <p className="flex justify-left sm:justify-start gap-2 font-bold text-xl">
+          <div className="flex justify-left sm:justify-start gap-2 font-bold text-xl py-4">
             <Typewriter
               options={{
                 strings: [`A Data Analyst`, `An Accountant`, 'A Novelist'],
@@ -27,7 +27,7 @@ const Homepage = () => {
                 deleteSpeed: 50,
               }}
             />
-          </p>
+          </div>
           <p className="max-w-md">
             Imagine the precision of an accountant, the insights of a data
             analyst, and the imagination of a novelist, all converging in one

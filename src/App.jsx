@@ -1,13 +1,22 @@
+import ScrollToTop from '@components/ScrollToTop';
 import AboutPage from '@pages/AboutPage';
 import Homepage from '@pages/Homepage';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+  useLocation,
+} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </ScrollToTop>
     </Router>
   );
 }
