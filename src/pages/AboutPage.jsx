@@ -1,4 +1,4 @@
-import about01 from '@assets/images/about/ab01.jpg';
+import about01 from '@assets/images/about/Ab01.jpg';
 import about1 from '@assets/images/about/01.png';
 import about2 from '@assets/images/about/02.png';
 import about3 from '@assets/images/about/02.jpg';
@@ -24,12 +24,14 @@ const AboutPage = () => {
             weaver of data-driven revelations, and a relentless seeker of
             truth—both within spreadsheets and blank pages.
           </p>
-          <Link
-            to="#"
+          <a
+            href="https://drive.google.com/file/d/1IVJEmjdzukwD4i2SvhdNIIB2w9gK4sOd/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
             className="mt-2 px-2.5 py-1.5 inline-flex items-center gap-2 text-base font-semibold bg-primary hover:bg-purple-600 text-white rounded shadow hover:shadow-none"
           >
             <MdCloudUpload /> Download MY CV
-          </Link>
+          </a>
         </div>
       </Header>
 
@@ -40,8 +42,8 @@ const AboutPage = () => {
           image={about01}
           text={`Hi! I am Chioma Precious Aguluka, A graduate of Nnamdi Azikiwe University(Unizik) Awka Nigeria, from the Department of Accounting. With over ${
             new Date().getFullYear() - 2023
-          }+ years of experience as a data analyst, over  ${
-            new Date().getFullYear() - 2018
+          }+ years of experience as a data analyst, over ${
+            new Date().getFullYear() - 2020
           }+ years of experience as an accountant and a lifetime experience as a novelist.`}
           swap
         />

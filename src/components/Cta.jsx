@@ -26,12 +26,14 @@ const Cta = () => {
         operational efficiency and organizational success. Download my
         Curriculum Vitae (CV) to learn more.
       </p>
-      <Link
-        to="#"
+      <a
+        href="https://drive.google.com/file/d/1IVJEmjdzukwD4i2SvhdNIIB2w9gK4sOd/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
         className="mt-2 px-2.5 py-1.5 inline-flex items-center gap-2 text-base font-semibold bg-primary hover:bg-purple-600 text-white rounded shadow hover:shadow-none"
       >
         <MdCloudUpload /> CHECKOUT MY CV
-      </Link>
+      </a>
     </div>
   );
 };
