@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import About from '../Components/About';
-import Cta from '../Components/Cta';
-import Footer from '../Components/Footer';
-import Header from '../Components/Header';
-import Services from '../Components/Services';
+import About from '@Components/About';
+import Cta from '@Components/Cta';
+import Footer from '@Components/Footer';
+import Header from '@Components/Header';
+import Services from '@Components/Services';
 import Typewriter from 'typewriter-effect';
 import { MdCloudUpload } from 'react-icons/md';
 
