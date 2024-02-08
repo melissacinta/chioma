@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import About from '@Components/About';
-import Cta from '@Components/Cta';
-import Footer from '@Components/Footer';
-import Header from '@Components/Header';
-import Services from '@Components/Services';
 import Typewriter from 'typewriter-effect';
 import { MdCloudUpload } from 'react-icons/md';
+import Header from '@components/Header';
+import About from '@components/About';
+import Cta from '@components/Cta';
+import Services from '@components/Services';
+import Footer from '@components/Footer';
 
 const Homepage = () => {
   return (
