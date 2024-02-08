@@ -1,6 +1,6 @@
 import about1 from '@assets/images/about1.png';
+import AboutItem from './AboutItem';
 import Headding from './Headding';
-import AboutItem from './aboutItem';
 const About = () => {
   return (
     <section id="about">
