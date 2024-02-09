@@ -33,14 +33,14 @@ const Header = ({ bgImage, children }) => {
               >
                 <Link to="/projects">My Projects</Link>
               </li>
-              <li
+              {/* <li
                 className={classNames(
                   location.pathname.includes('blog') ? 'bg-primary' : '',
                   'navlink'
                 )}
               >
                 <Link to="/blog">My Blog</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
