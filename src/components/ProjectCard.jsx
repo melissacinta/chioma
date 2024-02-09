@@ -2,7 +2,7 @@ import second from '@assets/images/projects/medical-1.png';
 const ProjectCard = ({ project }) => {
   return (
     <div className="group cursor-pointer min-h-[253px] bg-primary/10 rounded-xl w-full max-w-sm p-4 shadow">
-      <div className="w-full rounded drop-shadow-lg max-h-[10.5625rem] max-w-sm overflow-hidden">
+      <div className="w-full rounded-lg drop-shadow-lg max-h-[10.5625rem] max-w-sm overflow-hidden">
         <img
           src={project?.Picture ? project.Picture[0] : second}
           alt={project.projectName}
