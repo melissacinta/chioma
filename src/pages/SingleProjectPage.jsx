@@ -26,7 +26,7 @@ const SingleProjectPage = () => {
   return (
     <div>
       <Header bgImage={data?.Picture ? data?.Picture[0] : second}>
-        <div className="py-12 max-w-md space-y-6">
+        <div className="w-full py-12 max-w-2xl space-y-6">
           <h1 className="text-3xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
             {data?.projectName}
           </h1>
