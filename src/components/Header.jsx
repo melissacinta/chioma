@@ -8,6 +8,7 @@ import { useState } from 'react';
 const Header = ({ bgImage, children }) => {
   const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
+
   return (
     <header
       className="flex w-full bg-no-repeat bg-cover bg-center bg-fixed text-white"
@@ -58,7 +59,6 @@ Header.propTypes = {
 };
 
 const paths = [
-  { name: 'Home', link: '/' },
   { name: 'About Me', link: '/about' },
   { name: 'My Projects', link: '/projects' },
 ];
