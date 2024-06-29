@@ -9,6 +9,7 @@ import Header from '@components/Header';
 import Headding from '@components/Headding';
 import AboutItem from '@components/AboutItem';
 import Footer from '@components/Footer';
+import { workExperiences } from '@utils/experiences';
 
 const AboutPage = () => {
   return (
@@ -34,9 +35,32 @@ const AboutPage = () => {
           </a>
         </div>
       </Header>
-
       <section className="section-padding">
-        <div></div>
+        <Headding text="My Work Experience" extraClasses={'text-center'} />
+        <div className="flex flex-wrap gap-4 justify-center items-center">
+          {workExperiences.map((experience) => (
+            <div key={experience.id} className="max-w-[20rem]">
+              <div className="w-24 h-24 mx-auto overflow-hidden flex justify-center items-center">
+                <img
+                  src={experience.image}
+                  alt={experience.company}
+                  className="object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <h2 className="text-lg">{experience.company}</h2>
+                <p className="text-md">
+                  {experience.startDate} - {experience.endDate}
+                </p>
+                <p className="text-sm">
+                  {experience.position.toLocaleLowerCase()}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="section-padding">
         <Headding text="The Story Of Me" extraClasses={'text-center'} />
         <AboutItem
           image={about01}

@@ -10,6 +10,9 @@ import absenteeism from '@assets/images/projects/absenteeism-report-1.png';
 import data from '@assets/images/projects/data-professional-survey-1.png';
 import stores from '@assets/images/projects/Superstore-profit-1.png';
 import bike from '@assets/images/projects/Bike-sales-dashboard.png';
+import calculator from '@assets/images/projects/calculator.jpg';
+import demographic from '@assets/images/projects/demographic.jpg';
+import sql from '@assets/images/projects/sql.jpg';
 
 export const projects = [
   {
@@ -71,6 +74,7 @@ export const projects = [
           'Calculating statistics related to marketing or sales data.',
       },
     ],
+    Picture: [calculator],
     Link: 'https://raw.githubusercontent.com/ACSP-Tech/PYTHON_Projects/main/calculator.py',
   },
   {
@@ -138,6 +142,7 @@ export const projects = [
           "Using the project's insights to create compelling stories and communicate findings effectively.",
       },
     ],
+    Picture: [demographic],
     Link: 'https://raw.githubusercontent.com/ACSP-Tech/PYTHON_Projects/main/Demographic_Data_Analyzer.py',
   },
   {
@@ -426,6 +431,7 @@ export const projects = [
           'Demonstrates the ability to analyze database performance over specific periods using targeted queries and timeframe filtering, providing valuable insights.',
       },
     ],
+    Picture: [sql],
     Link: 'https://raw.githubusercontent.com/ACSP-Tech/SQL-Projects/main/Small Business Query.sql',
   },
   {

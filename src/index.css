@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
+  color: rgb(44, 43, 43);
+  background: #fcf9f9;
 }
 
 .navlink {
