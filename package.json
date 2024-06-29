@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "contentful": "^10.12.4",
     "postcss": "^8.4.32",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

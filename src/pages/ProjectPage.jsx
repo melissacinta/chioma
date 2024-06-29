@@ -4,9 +4,27 @@ import Header from '@components/Header';
 import Headding from '@components/Headding';
 import Footer from '@components/Footer';
 import ProjectCard from '@components/ProjectCard';
-import { projects } from '@utils/projectData';
+import { projects as projectData } from '@utils/projectData';
+import useProjects from '@hooks/useProjects';
+import LoadingIndicator from '@components/LoadingIndicator';
 
 const ProjectPage = () => {
+  const [projects, isLoading] = useProjects();
+  console.log({ projects });
+  const renderProjects = () => {
+    if (isLoading) return <LoadingIndicator />;
+
+    return (
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.fields.projectName}
+            project={project.fields}
+          />
+        ))}
+      </div>
+    );
+  };
   return (
     <div>
       <Header>
@@ -34,11 +52,8 @@ const ProjectPage = () => {
           text="View some of my recent works"
           extraClasses={'text-center'}
         />
-        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
-          {projects.map((project) => (
-            <ProjectCard key={project.projectName} project={project} />
-          ))}
-        </div>
+
+        {renderProjects()}
       </section>
       <Footer />
     </div>

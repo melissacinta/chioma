@@ -10,6 +10,8 @@ export default defineConfig({
       '@assets': '/src/assets',
       '@utils': '/src/utils',
       '@pages': '/src/pages',
+      '@hooks': '/src/hooks',
+      '@api': '/src/api',
     },
   },
   plugins: [react()],

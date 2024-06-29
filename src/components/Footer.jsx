@@ -12,7 +12,7 @@ const Footer = () => {
         {' '}
         &copy;ACSP 2023 - {new Date().getFullYear()} - designed by{' '}
         <a
-          href="https://www.techieng.netlify.app"
+          href="https://techieng.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >
@@ -27,15 +27,11 @@ const Footer = () => {
       <div className="order-1 sm:order-none sm:flex flex-1 items-center flex-wrap gap-2">
         <div className="flex-1">
           <h3 className="font-medium">Follow me on</h3>
-          <ul>
+          <ul className="flex items-center gap-2 text-blue-700">
             {socials.map((item, i) => (
               <li key={i}>
-                <a
-                  href={item.link}
-                  className="flex items-center gap-2 text-blue-700"
-                >
+                <a href={item.link}>
                   <item.icon />
-                  <span>{item.name}</span>
                 </a>
               </li>
             ))}
@@ -44,10 +40,10 @@ const Footer = () => {
         <div>
           <h3>You can also reach me on</h3>
           <a
-            href="mailto:agulukachioma@gmail.com"
+            href="mailto:acspworld@gmail.com"
             className="flex items-center gap-2"
           >
-            <FaEnvelope /> <span>agulukachioma@gmail.com</span>
+            <FaEnvelope /> <span>acspworld@gmail.com</span>
           </a>
         </div>
       </div>
