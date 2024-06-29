@@ -1,5 +1,4 @@
 import Footer from '@components/Footer';
-
 import Header from '@components/Header';
 import { useParams } from 'react-router-dom';
 import second from '@assets/images/projects/medical-1.png';

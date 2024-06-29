@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom';
 import { MdCloudUpload } from 'react-icons/md';
 import Header from '@components/Header';
 import Headding from '@components/Headding';
 import Footer from '@components/Footer';
 import ProjectCard from '@components/ProjectCard';
-import { projects as projectData } from '@utils/projectData';
 import useProjects from '@hooks/useProjects';
 import LoadingIndicator from '@components/LoadingIndicator';
 
