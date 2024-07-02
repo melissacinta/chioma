@@ -30,7 +30,7 @@ const Homepage = () => {
           </div>
           <p className="max-w-md">
             Imagine the precision of an accountant, the insights of a data
-            analyst, and the imagination of a novelist, all converging in one
+            analyst, and the imagination of a novelist, all converging in onenp
             mind. That&apos;s Me, weaving logic and magic, unearthing truths
             from both balance sheets and blank pages.
           </p>

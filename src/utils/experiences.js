@@ -12,22 +12,6 @@ export const workExperiences = [
     image: kpmg, // Empty field for image
   },
   {
-    id: '2',
-    position: 'DATA ANALYST | DIVERSITY PROGRAM COMMITTEE MEMBER (VOLUNTEER)',
-    company: 'instinctHub',
-    startDate: 'December 2023',
-    endDate: 'Present',
-    image: instincthub, // Empty field for image
-  },
-  {
-    id: '3',
-    position: 'GENERAL SUPERVISOR',
-    company: 'AM STORE ONLINE LIMITED',
-    startDate: 'January 2022',
-    endDate: 'June 2023',
-    image: amstore, // Empty field for image
-  },
-  {
     id: '4',
     position: 'ACCOUNTANT',
     company: 'AM STORE ONLINE LIMITED',
