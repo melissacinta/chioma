@@ -1,5 +1,4 @@
 import amstore from '@assets/images/about/amstore.png';
-import instincthub from '@assets/images/about/instincthub.png';
 import kpmg from '@assets/images/about/kpmg.svg';
 import taraba from '@assets/images/about/taraba.png';
 export const workExperiences = [
