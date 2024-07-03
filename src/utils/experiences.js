@@ -8,7 +8,7 @@ export const workExperiences = [
     position: 'DATA ANALYST INTERN (VIRTUAL)',
     company: 'KPMG',
     startDate: 'January 2024',
-    endDate: 'present',
+    endDate: 'June 2024',
     image: kpmg, // Empty field for image
   },
   {
