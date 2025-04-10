@@ -9,6 +9,11 @@ const getProjects = () =>
     .getEntries({ content_type: 'portfolioProject' })
     .then((response) => response.items);
 
+const getExperiences = () =>
+  client
+    .getEntries({ content_type: 'portfolioExperience' })
+    .then((response) => response.items);
+
 const getSingleProject = (slug) =>
   client
     .getEntries({
@@ -17,4 +22,4 @@ const getSingleProject = (slug) =>
     })
     .then((response) => response?.items[0]?.fields);
 
-export { getProjects, getSingleProject };
+export { getProjects, getSingleProject, getExperiences };

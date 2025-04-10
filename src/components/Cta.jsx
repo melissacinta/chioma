@@ -1,5 +1,4 @@
 import { MdCloudUpload } from 'react-icons/md';
-import { Link } from 'react-router-dom';
 import Headding from './Headding';
 
 const Cta = () => {
@@ -27,7 +26,7 @@ const Cta = () => {
         Curriculum Vitae (CV) to learn more.
       </p>
       <a
-        href="https://drive.google.com/file/d/1IVJEmjdzukwD4i2SvhdNIIB2w9gK4sOd/view?usp=sharing"
+        href="https://drive.google.com/file/d/1nzyS9VEG_dYlSCSktDz37PaycwyIR8q0/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         className="mt-2 px-2.5 py-1.5 inline-flex items-center gap-2 text-base font-semibold bg-primary hover:bg-purple-600 text-white rounded shadow hover:shadow-none"

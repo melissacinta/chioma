@@ -3,13 +3,12 @@ import about1 from '@assets/images/about/01.png';
 import about2 from '@assets/images/about/02.png';
 import about3 from '@assets/images/about/02.jpg';
 import about4 from '@assets/images/about/04.jpg';
-import { Link } from 'react-router-dom';
 import { MdCloudUpload } from 'react-icons/md';
 import Header from '@components/Header';
 import Headding from '@components/Headding';
 import AboutItem from '@components/AboutItem';
 import Footer from '@components/Footer';
-import { workExperiences } from '@utils/experiences';
+import Experiences from '@components/Experiences';
 
 const AboutPage = () => {
   return (
@@ -26,7 +25,7 @@ const AboutPage = () => {
             truth—both within spreadsheets and blank pages.
           </p>
           <a
-            href="https://drive.google.com/file/d/1IVJEmjdzukwD4i2SvhdNIIB2w9gK4sOd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1nzyS9VEG_dYlSCSktDz37PaycwyIR8q0/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="mt-2 px-2.5 py-1.5 inline-flex items-center gap-2 text-base font-semibold bg-primary hover:bg-purple-600 text-white rounded shadow hover:shadow-none"
@@ -35,31 +34,7 @@ const AboutPage = () => {
           </a>
         </div>
       </Header>
-      <section className="section-padding">
-        <Headding text="My Work Experience" extraClasses={'text-center'} />
-        <div className="flex flex-wrap gap-4 justify-center items-center">
-          {workExperiences.map((experience) => (
-            <div key={experience.id} className="max-w-[20rem]">
-              <div className="w-24 h-24 mx-auto overflow-hidden flex justify-center items-center">
-                <img
-                  src={experience.image}
-                  alt={experience.company}
-                  className="object-contain"
-                />
-              </div>
-              <div className="text-center">
-                <h2 className="text-lg">{experience.company}</h2>
-                <p className="text-md">
-                  {experience.startDate} - {experience.endDate}
-                </p>
-                <p className="text-sm">
-                  {experience.position.toLocaleLowerCase()}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Experiences />
       <section className="section-padding">
         <Headding text="The Story Of Me" extraClasses={'text-center'} />
         <AboutItem
